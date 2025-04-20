@@ -1,4 +1,6 @@
-const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+
+//const fetch = require('node-fetch');
 const fs = require('fs');
 
 const coins = ['bitcoin', 'ethereum', 'dogecoin'];
