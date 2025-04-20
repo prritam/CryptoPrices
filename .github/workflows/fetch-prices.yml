@@ -32,3 +32,6 @@ jobs:
           git push
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # or ./dist or your output folder
+          publish_branch: gh-pages
+          
