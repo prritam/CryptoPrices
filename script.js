@@ -10,6 +10,8 @@ coins.forEach(coin => {
 });
 
 const cryptos = ['bitcoin', 'ethereum', 'dogecoin'];
+ const now = new Date();
+ document.getElementById("lastUpdated").textContent = "Last updated: " + now.toLocaleString();
 
 async function fetchPrices() {
   try {
