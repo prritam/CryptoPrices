@@ -2,7 +2,7 @@ name: Update Crypto Prices
 
 on:
   schedule:
-    - cron: "0 * * * *"  # runs every hour
+    - cron: "*/30 * * * *"  # runs every hour
   workflow_dispatch:    # allows manual runs
 
 jobs:
