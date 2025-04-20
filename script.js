@@ -1,4 +1,13 @@
 const pricesContainer = document.getElementById('prices');
+const coins = Object.keys(prices);
+
+coins.forEach(coin => {
+  const price = prices[coin].usd;
+  const div = document.createElement('div');
+  div.className = 'crypto';
+  div.innerHTML = `<strong>${coin.toUpperCase()}</strong> <span>$${price.toLocaleString()}</span>`;
+  pricesContainer.appendChild(div);
+});
 
 const cryptos = ['bitcoin', 'ethereum', 'dogecoin'];
 
