@@ -1,11 +1,11 @@
 const prices = {
   "bitcoin": {
-    "usd": 104729
+    "usd": 104914
   },
   "dogecoin": {
-    "usd": 0.18792
+    "usd": 0.189599
   },
   "ethereum": {
-    "usd": 2609.08
+    "usd": 2616.77
   }
 };
